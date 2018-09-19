@@ -1,0 +1,21 @@
+variable1 = 3
+variable2 = 9
+string1 = "Hi"
+string2 = "Bye"
+string = "Aria" 
+int1 = 3
+
+def question1 (a,b):
+    print (a + b)
+    return None
+  
+def question2 (string1, string2, int1):
+    print(("Hi"+"Bye")*int1)
+    return None 
+    
+def question3 (string):
+    return None
+
+question1(3,9)
+question2(string1, string2, int1)
+
