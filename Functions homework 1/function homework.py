@@ -67,6 +67,7 @@ def info():
 
 info()
 
+#In computing, a parameter is defined as "a reference or value that is passed to a function, procedure, subroutine, command, or program". The default parameter is a function parameter that has a default value provided to it. 
 
 
 
