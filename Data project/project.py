@@ -69,8 +69,8 @@ for movie in movie_data:
 for movie in movie_data:
     by_year[movie[0]] += [movie]
 
-with open ("by_year.pickle", "wb") as f:
-    pickle.dump(by_year, f)
+#with open ("by_year.pickle", "wb") as f:
+    #pickle.dump(by_year, f)
 
 #print (by_year["1991"])
 
@@ -104,7 +104,7 @@ for movie in movie_data:
 
 #print (by_actor["Banderas Antonio"])
     
-def avgmoviebyyear (year):
+def avgmoviebyyear ():
     avg_by_year = {}
     for year in by_year:
         count = len(by_year[year])
@@ -119,11 +119,17 @@ def avgmoviebyyear (year):
     
     print (avg_by_year)
 
-avgmoviebyyear(1991)
+avgmoviebyyear()
 
 #Number of Movies per year
-def noofmoviesbyyear (yr):
-    count = len(by_year[yr])
-    print(count)
+
+def noofmovesbyyear ():
+    movies_per_year = {}
+    for year in by_year:
+        count = len(by_year[year])   
+        movies_per_year[year] = count
     
-noofmoviesbyyear("1953")
+    print (movies_per_year)
+
+
+noofmovesbyyear ()
